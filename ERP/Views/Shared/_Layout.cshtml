@@ -10,6 +10,61 @@
 </head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <body>
+    <div class="navbar-header fixed-top navbar-dark bg-dark">
+        <div class="nav navbar-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col navbar-brand">
+                        <ul class="navbar-nav flex-row">
+                            <li class="nav-item ml-5 mr-1">
+                                <a class="nav-link" href="#">
+                                    <img src="~/Sources/Image/ERP.png" alt="#" height="50" width="50" />
+                                </a>
+                            </li>
+                            <li class="nav-item ml-1 mr-2">
+                                <a class="nav-link" href="#">Sistema Multiplataforma</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <ul class="nav navbar flex-row">
+                            <li class="nav-item ml-4 mr-4">
+                                <a class="nav-link" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item ml-4 mr-4">
+                                <a class="nav-link" href="#">Nosotros</a>
+                            </li>
+                            <li class="nav-item ml-4 mr-4">
+                                <a class="nav-link" href="#">Productos</a>
+                            </li>
+                            <li class="nav-item ml-4 mr-4">
+                                <a class="nav-link" href="#">Soporte</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>-->
+                    </div>
+                    <div class="align-content-lg-end mr-2">
+                        <ul class="nav navbar">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Iniciar Sesion</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <button class="align-content-end navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!--
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -18,16 +73,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Nombre de la aplicación", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <a>
+                    <img class="navbar-brand" src="~/Sources/Image/ERP.png" alt="" height="80" width="80" />
+                    @Html.ActionLink("Sistema Multiplataforma", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </a>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+            <div class="navbar-collapse collapse glyphicon-menu-right">
+                <ul class="nav navbar-nav ">
                     <li>@Html.ActionLink("Inicio", "Index", "Home", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
                 </ul>
             </div>
+                <ul class="my-2 my-lg-0">
+                    <li>@Html.ActionLink("Iniciar Sesion", "Index", "login", new { area = "" }, null)</li>
+                </ul>
         </div>
-    </div>
+    </div>-->
     <div class="container body-content">
         @RenderBody()
         <hr />
