@@ -292,6 +292,9 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Sources\Image\1.jpg" />
+    <Content Include="Sources\Image\2.jpg" />
+    <Content Include="Sources\Image\3.jpg" />
     <Content Include="Sources\Image\ERP.png" />
     <Content Include="Sources\Image\login.png" />
     <Content Include="Sources\Image\login_white.png" />
